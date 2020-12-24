@@ -1,0 +1,62 @@
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/svgeezy.min.js"></script>
+  <script>
+    svgeezy.init(false, '.png');
+  </script>
+  <script>
+    $(document).ready(function() {
+     // executes when HTML-Document is loaded and DOM is ready
+
+      $(".dropdown-caret").click(function(){
+        $(this).toggleClass("expanded");
+      });
+    // breakpoint and up  
+    // when you hover a toggle show its dropdown menu
+      $(".navbar .dropdown-toggle").hover(function () {
+        $(this).parent().toggleClass("show");
+        $(this).parent().find(".dropdown-menu").toggleClass("show");
+        $(this).attr("aria-expanded", "true");
+      });
+
+      // hide the menu when the mouse leaves the dropdown
+      $(".navbar .dropdown-menu").mouseleave(function() {
+        $(this).removeClass("show");
+        $(this).parent().find(".dropdown-toggle").attr("aria-expanded", "false");
+      });
+      // do something here
+      // accordion nav symbols
+      $("#mobileMenu").on("shown.bs.collapse", ".collapse", function(){
+        $("#mobileMenu button").each(function(idx,ele){
+          var $this = $(this);
+          var $target = $($this.attr("data-target"));
+          var $icon = $this.find(".icon-expand");
+          if ($target.hasClass("show")) {
+            $icon.removeClass("icon-expand").addClass("icon-collapse");
+          } else {
+            $icon.removeClass("icon-collapse").addClass("icon-expand");
+          }
+        });
+      });
+
+      $("#mobileMenu").on("hidden.bs.collapse", ".collapse", function(e){
+        console.log(e);
+        e.stopPropagation();
+        var $target = $("[data-target='#"+$(this).attr("id")+"'] .icon-collapse");
+        $target.removeClass("icon-collapse").addClass("icon-expand");
+        console.log($target);
+      });
+    // will most likely have to firm up toggleslop in the footer. 
+    // document ready 
+    });
+
+    // Back to top button
+    $(window).scroll(function(){
+      if ($(window).scrollTop() > 20) {
+        $(".btt").removeClass("invisible");
+      } else {
+        $(".btt").addClass("invisible");
+      }
+    });
+
+  </script>

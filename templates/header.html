@@ -1,0 +1,806 @@
+  <!-- HEADER -->
+  <a id="top"></a>
+  <div class="container-fluid bcm-nav-header px-0 fixed-top">
+    <div class="container-md">
+      <nav class="navbar navbar-expand-md">
+        <a href="#" class="navbar-brand"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#globalNavigation" aria-controls="globalNavigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="globalNavigation">
+          <!-- accordion menu for mobile display only -->
+          <div class="container-fluid accordion d-flex d-md-none" id="mobileMenu">
+            <div class="row">
+              <div id="healthcareMobile" class="col-12 px-0">
+                <div class="row">
+                  <div class="col-10 divider">
+                    <a href="http://bcm.edu/healthcare/" class="btn btn-link">Healthcare</a>
+                  </div>
+                  <div class="col-2">
+                    <button class="btn btn-link float-right" type="button" data-toggle="collapse" data-target="#healthcareMobileSecondary" aria-expanded="false" aria-controls="healthcareMobileSecondary"><i class="icon-expand"></i><span class="sr-only">menu expand/collapse</span></button>
+                  </div>
+                </div>
+              </div>
+              <!-- secondary accordion: HEALTHCARE -->
+              <div id="healthcareMobileSecondary" class="col-12 collapse px-0" aria-labelledby="healthcareMobile" data-parent="#mobileMenu">
+                <ul class="accordion list-unstyled" id="healthcareSecondaryMenu">
+              <li>
+                <div class="row">
+                  <div class="col-10 divider"><a href="http://bcm.edu/healthcare/specialties/" class="btn btn-link">Specialties</a></div>
+                  <div class="col-2"><button class="btn btn-link float-right" type="button" data-toggle="collapse" data-target="#healthcareMobileSpecialties" aria-expanded="false" aria-controls="healthcareMobileSpecialties"><i class="icon-expand"></i></button></div>
+                </div>
+                <!-- tertiary accordion -->
+                <div class="row">
+                  <div class="col-12 px-0 collapse" id="healthcareMobileSpecialties" aria-labelledby="healthcareSecondaryMenu" data-parent="#healthcareMobileSecondary">
+                    <ul class="list-unstyled">
+                      <li class="divider"><a href="http://bcm.edu/healthcare/specialties/cardiovascular-medicine" class="btn btn-link">Cardiovascular Care</a></li>
+                      <li class="divider"><a href="http://bcm.edu/healthcare/specialties/oncology" class="btn btn-link">Oncology</a></li>
+                      <li class="divider"><a href="http://bcm.edu/healthcare/specialties/neurosurgery" class="btn btn-link">Neurosurgery</a></li>
+                      <li class="divider"><a href="http://bcm.edu/healthcare/specialties/family-medicine/preventive-and-acute-care" class="btn btn-link">Primary Care</a></li>
+                      <li class="divider"><a href="http://bcm.edu/healthcare/specialties/" class="btn btn-link">View All Specialties</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- end tertiary -->
+              </li>
+              <li>
+                <div class="row">
+                  <div class="col-10 divider"><a href="http://bcm.edu/healthcare/for-physicians" class="btn btn-link">For Health Professionals</a></div>
+                  <div class="col-2"><button class="btn btn-link float-right" type="button" data-toggle="collapse" data-target="#healthcareMobileHealthPro" aria-expanded="false" aria-controls="healthcareMobileHealthPro"><i class="icon-expand"></i></button></div>
+                </div>
+                <!-- tertiary accordion -->
+                <div class="row">
+                  <div class="col-12 px-0 collapse" id="healthcareMobileHealthPro" aria-labelledby="healthcareSecondaryMenu" data-parent="#healthcareMobileSecondary">
+                    <ul class="list-unstyled">
+                      <li class="divider"><a href="http://bcm.edu/healthcare/find-a-doctor" class="btn btn-link">Refer a Patient</a></li>
+                      <li class="divider"><a href="http://bcm.edu/healthcare/clinical-trials" class="btn btn-link">Clinical Trials</a></li>
+                      <li class="divider"><a href="http://bcm.edu/education/school-of-medicine/continuing-professional-development" class="btn btn-link">Professional Development</a></li>
+                      <li class="divider"><a href="http://bcm.edu/healthcare/for-physicians" class="btn btn-link">View All</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- end tertiary -->
+              </li>
+              <li>
+                <div class="row">
+                  <div class="col-10"><a href="http://bcm.edu/healthcare/for-patients" class="btn btn-link">For Patients &amp; Visitors</a></div>
+                  <div class="col-2"><button class="btn btn-link float-right" type="button" data-toggle="collapse" data-target="#healthcareMobilePatients" aria-expanded="false" aria-controls="healthcareMobilePatients"><i class="icon-expand"></i></button></div>
+                </div>
+                <!-- tertiary accordion -->
+                <div class="row">
+                  <div class="col-12 px-0 collapse" id="healthcareMobilePatients" aria-labelledby="healthcareSecondaryMenu" data-parent="#healthcareMobileSecondary">
+                    <ul class="list-unstyled">
+                      <li class="divider"><a href=" https://mychart.bcm.edu/MyChartPRD/Authentication/Login?" class="btn btn-link">MyChart Login</a></li>
+                      <li class="divider"><a href="http://bcm.edu/healthcare/for-patients/insurance" class="btn btn-link">Accepted Insurance</a></li>
+                      <li class="divider"><a href="http://bcm.edu/healthcare/for-patients/patient-guide" class="btn btn-link">Patient Information</a></li>
+                      <li class="divider"><a href="http://bcm.edu/healthcare/for-patients" class="btn btn-link">View All</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- end tertiary -->
+              </li>
+              <li>
+                <div class="row">
+                  <div class="col-10 divider"><a href="http://bcm.edu/healthcare/clinical-trials" class="btn btn-link">Clinical Trials</a></div>
+                  <div class="col-2"><button class="btn btn-link float-right" type="button" data-toggle="collapse" data-target="#healthcareMobileTrials" aria-expanded="false" aria-controls="healthcareMobileTrials"><i class="icon-expand"></i></button></div>
+                </div>
+                <!-- tertiary accordion -->
+                <div class="row">
+                  <div class="col-12 px-0 collapse" id="healthcareMobileTrials" aria-labelledby="healthcareSecondaryMenu" data-parent="#healthcareMobileSecondary">
+                    <ul class="list-unstyled">
+                      <li class="divider"><a href="http://bcm.edu/healthcare/clinical-trials?field_clinical_trial_tags_target_id_verf%5B0%5D=69" class="btn btn-link">Autism</a></li>
+                      <li class="divider"><a href="http://bcm.edu/healthcare/clinical-trials?field_clinical_trial_tags_target_id_verf%5B0%5D=10" class="btn btn-link">Cancer</a></li>
+                      <li class="divider"><a href="http://bcm.edu/healthcare/clinical-trials?field_clinical_trial_tags_target_id_verf%5B0%5D=42" class="btn btn-link">Obesity</a></li>
+                      <li class="divider"><a href="http://bcm.edu/healthcare/clinical-trials?field_clinical_trial_tags_target_id_verf%5B0%5D=45" class="btn btn-link">Substance Abuse</a></li>
+                      <li class="divider"><a href="http://bcm.edu/healthcare/clinical-trials" class="btn btn-link">View All Clinical Trials</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+                </ul>
+              </div>
+            </div>
+            <!-- end HEALTHCARE -->
+            <!-- secondary accordion: EDUCATION -->
+            <div class="row">
+              <div id="educationMobile" class="col-12 px-0">
+                <div class="row">
+                  <div class="col-10 divider">
+                    <a href="http://bcm.edu/education" class="btn btn-link">Education</a>
+                  </div>
+                  <div class="col-2">
+                      <button class="btn btn-link collapsed float-right" type="button" data-toggle="collapse" data-target="#educationMobileSecondary" aria-expanded="false" aria-controls="educationMobileSecondary"><i class="icon-expand"></i></button>                   
+                  </div>
+                </div>
+              </div>
+              <div id="educationMobileSecondary" class="col-12 collapse px-0" aria-labelledby="educationMobile" data-parent="#mobileMenu">
+              <ul class="accordion list-unstyled" id="educationSecondaryMenu">
+                <li>
+                  <div class="row">
+                    <div class="col-10 divider"><a href="http://bcm.edu/education" class="btn btn-link">Degree Programs &amp; Admissions</a></div>
+                    <div class="col-2"><button class="btn btn-link float-right" type="button" data-toggle="collapse" data-target="#educationMobileDegrees" aria-expanded="false" aria-controls="educationMobileDegrees"><i class="icon-expand"></i></button></div>
+                  </div>
+                  <!-- tertiary accordion -->
+                  <div class="row">
+                    <div class="col-12 px-0 collapse" id="educationMobileDegrees" aria-labelledby="educationSecondaryMenu" data-parent="#educationMobileSecondary">
+                      <ul class="list-unstyled">
+                        <li class="divider"><a href="http://bcm.edu/education/school-of-medicine/m-d-program" class="btn btn-link">M.D. Program</a></li>
+                        <li class="divider"><a href="http://bcm.edu/education/graduate-school-of-biomedical-sciences" class="btn btn-link">Ph.D. Programs</a></li>
+                        <li class="divider"><a href="http://bcm.edu/education/school-of-health-professions/dnp-program-nurse-anesthesia" class="btn btn-link">Doctor of Nurse Practice (Anesthesia)</a></li>
+                        <li class="divider"><a href="http://bcm.edu/education/school-of-health-professions/genetic-counseling-program" class="btn btn-link">Genetic Counseling Program</a></li>
+                        <li class="divider"><a href="http://bcm.edu/education/school-of-health-professions/physician-assistant-program" class="btn btn-link">P.A. Program</a></li>
+                        <li class="divider"><a href="http://bcm.edu/education/school-of-health-professions/orthotics-and-prosthetics-program" class="btn btn-link">Orthotics &amp; Prosthetics Program</a></li>
+                        <li class="divider"><a href="http://bcm.edu/education/school-of-medicine/baccalaureate-m-d-programs" class="btn btn-link">Baccalaureate/M.D. Programs</a></li>
+                        <li class="divider"><a href="http://bcm.edu/education/school-of-medicine/m-d-program/dual-degrees" class="btn btn-link">Dual Degree Programs</a></li>
+                        <li class="divider"><a href="http://bcm.edu/education/programs-admissions" class="btn btm-link">View All Programs</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-10 divider"><a href="#" class="btn btn-link">Financing Your Education</a></div>
+                    <div class="col-2"><button class="btn btn-link float-right" type="button" data-toggle="collapse" data-target="#educationMobileFinancing" aria-expanded="false" aria-controls="educationMobileFinancing"><i class="icon-expand"></i></button></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 px-0 collapse" id="educationMobileFinancing" aria-labelledby="educationSecondaryMenu" data-parent="#educationMobileSecondary">
+                      <ul class="list-unstyled">
+                        <li class="divider"><a href="http://bcm.edu/education/tuition-fees" class="btn btn-link">Tuition &amp; Fees</a></li>
+                        <li class="divider"><a href="http://bcm.edu/education/financial-aid" class="btn btn-link">Financial Aid</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-10 divider"><a href="http://bcm.edu/education/schools" class="btn btn-link">Schools</a></div>
+                    <div class="col-2"><button class="btn btn-link float-right" type="button" data-toggle="collapse" data-target="#educationMobileSchools" aria-expanded="false" aria-controls="educationMobileSchools"><i class="icon-expand"></i></button></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 px-0 collapse" id="educationMobileSchools" aria-labelledby="educationSecondaryMenu" data-parent="#educationMobileSecondary">
+                      <ul class="list-unstyled">
+                        <li class="divider"><a href="http://bcm.edu/education/school-of-medicine" class="btn btn-link">School of Medicine</a></li>
+                        <li class="divider"><a href="http://bcm.edu/education/graduate-school-of-biomedical-sciences" class="btn btn-link">Graduate School of Biomedical Sciences</a></li>
+                        <li class="divider"><a href="http://bcm.edu/education/national-school-of-tropical-medicine" class="btn btn-link">National School of Tropical Medicine</a></li>
+                        <li class="divider"><a href="http://bcm.edu/education/school-of-health-professions" class="btn btn-link">School of Health Professionals</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-10 divider"><a href="http://bcm.edu/education/programs-admissions" class="btn btn-link">Advanced Training Programs</a></div>
+                    <div class="col-2"><button class="btn btn-link float-right" type="button" data-toggle="collapse" data-target="#educationMobileTraining" aria-expanded="false" aria-controls="educationMobileTraining"><i class="icon-expand"></i></button></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 px-0 collapse" id="educationMobileTraining" aria-labelledby="educationSecondaryMenu" data-parent="#educationMobileSecondary">
+                      <ul class="list-unstyled">
+                        <li class="divider"><a href="http://bcm.edu/education/programs-admissions?field_program_types_value%5B0%5D=Residency" class="btn btn-link">Residency Programs</a></li>
+                        <li class="divider"><a href="http://bcm.edu/education/programs-admissions?field_program_types_value%5B0%5D=Clinical%20Fellowship" class="btn btn-link">Clinical Fellowships</a></li>
+                        <li class="divider"><a href="https://jobs.bcm.edu/go/Postdoctoral-Research/7891800/https://jobs.bcm.edu/go/Postdoctoral-Research/7891800/" class="btn btn-link">Postdoctoral Research Positions</a></li>
+                        <li class="divider"><a href="http://bcm.edu/education/school-of-medicine/continuing-professional-development" class="btn btn-link">Continuing Professional Development</a></li>
+                        <li class="divider"><a href="http://bcm.edu/education/national-school-of-tropical-medicine/education/diploma-in-tropical-medicine" class="btn btn-link">Diploma in Tropical Medicine</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-10 divider"><a href="http://bcm.edu/education/academic-faculty-affairs" class="btn btn-link">Resources</a></div>
+                    <div class="col-2"><button class="btn btn-link float-right" type="button" data-toggle="collapse" data-target="#educationMobileResources" aria-expanded="false" aria-controls="educationMobileResources"><i class="icon-expand"></i></button></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 px-0 collapse" id="educationMobileResources" aria-labelledby="educationSecondaryMenu" data-parent="#educationMobileSecondary">
+                      <ul class="list-unstyled">
+                        <li class="divider"><a href="http://bcm.edu/departments" class="btn btn-link">Departments</a></li>
+                        <li class="divider"><a href="http://bcm.edu/academic-centers" class="btn btn-link">Academic Centers</a></li>
+                        <li class="divider"><a href="http://bcm.edu/about-us/diversity-inclusion" class="btn btn-link">Diversity, Inclusion, &amp; Equity</a></li>
+                        <li class="divider"><a href="http://bcm.edu/education/registrar/academic-calendars" class="btn btn-link">Academic Calendars</a></li>
+                        <li class="divider"><a href="http://bcm.edu/education/academic-faculty-affairs/academic-resources" class="btn btn-link">View All</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-10 divider"><a href="#" class="btn btn-link">Information For...</a></div>
+                    <div class="col-2"><button class="btn btn-link float-right" type="button" data-toggle="collapse" data-target="#educationMobileInformation" aria-expanded="false" aria-controls="educationMobileInformation"><i class="icon-expand"></i></button></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 px-0 collapse" id="educationMobileInformation" aria-labelledby="educationSecondaryMenu" data-parent="#educationMobileSecondary">
+                      <ul class="list-unstyled">
+                        <li class="divider"><a href="http://bcm.edu/education/for-students" class="btn btn-link">Students</a></li>
+                        <li class="divider"><a href="http://bcm.edu/education/school-of-medicine/graduate-medical-education" class="btn btn-link">Residents &amp; Fellows</a></li>
+                        <li class="divider"><a href="http://bcm.edu/education/graduate-school-of-biomedical-sciences/postdoctoral-affairs" class="btn btn-link">Postdoctoral Researchers</a></li>
+                        <li class="divider"><a href="http://bcm.edu/education/for-faculty" class="btn btn-link">Faculty</a></li>
+                        <li class="divider"><a href="http://bcm.edu/about-us/alumni" class="btn btn-link">Alumni</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              </div>
+            </div>
+            <!-- end EDUCATION -->
+            <!-- secondary accordion: RESEARCH -->
+            <div class="row">
+              <div id="researchMobile" class="col-12 px-0">
+                <div class="row">
+                  <div class="col-10 divider">
+                    <a href="http://bcm.edu/research" class="btn btn-link">Research</a>
+                  </div>
+                  <div class="col-2">
+                      <button class="btn btn-link collapsed float-right" type="button" data-toggle="collapse" data-target="#researchMobileSecondary" aria-expanded="false" aria-controls="researchMobileSecondary"><i class="icon-expand"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div id="researchMobileSecondary" class="col-12 collapse px-0" aria-labelledby="researchMobile" data-parent="#mobileMenu">
+              <ul class="accordion list-unstyled" id="researchSecondaryMenu">
+                <li>
+                  <div class="row">
+                    <div class="col-10 divider"><a href="http://bcm.edu/research" class="btn btn-link">Research at Baylor</a></div>
+                    <div class="col-2"><button class="btn btn-link float-right" type="button" data-toggle="collapse" data-target="#researchMobileBaylor" aria-expanded="false" aria-controls="researchMobileBaylor"><i class="icon-expand"></i></button></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 px-0 collapse" id="researchMobileBaylor" aria-labelledby="researchSecondaryMenu" data-parent="#researchMobileSecondary">
+                      <ul class="list-unstyled">
+                        <li class="divider"><a href="http://bcm.edu/departments-centers" class="btn btn-link">Academic Centers</a></li>
+                        <li class="divider"><a href="http://bcm.edu/departments-centers" class="btn btn-link">Departments</a></li>
+                        <li class="divider"><a href="http://bcm.edu/research/clinical-trials" class="btn btn-link">Clinical Trials</a></li>
+                        <li class="divider"><a href="http://bcm.edu/research/labs-and-centers/faculty-labs" class="btn btn-link">Faculty Labs</a></li>
+                        <li class="divider"><a href="https://blogs.bcm.edu/topics/from-the-labs/" class="btn btn-link">From the Labs</a></li>
+                        <li class="divider"><a href="http://bcm.edu/research/news" class="btn btn-link">News</a></li>                       
+                        <li class="divider"><a href="http://bcm.edu/research/baylor-research" class="btn btn-link">Our Research</a></li>
+                        <li class="divider"><a href="http://bcm.edu/research/labs-centers/centers" class="btn btn-link">Research Centers</a></li>
+                        <li class="divider"><a href="http://bcm.edu/research/baylor-research/strategic-research-centers" class="btn btn-link">Strategic Research Center</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-10 divider"><a href="http://bcm.edu/research" class="btn btn-link">Research Offices</a></div>
+                    <div class="col-2"><button class="btn btn-link float-right" type="button" data-toggle="collapse" data-target="#researchMobileOffices" aria-expanded="false" aria-controls="researchMobileOffices"><i class="icon-expand"></i></button></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 px-0 collapse" id="researchMobileOffices" aria-labelledby="researchSecondaryMenu" data-parent="#researchMobileSecondary">
+                      <ul class="list-unstyled">
+                        <li class="divider"><a href="http://bcm.edu/research/services/atc-labs" class="btn btn-link">Advanced Technology Cores</a></li>
+                        <li class="divider"><a href="http://bcm.edu/?tmp=/research/oor/ccm/home" class="btn btn-link">Center of Comparative medicine</a></li>
+                        <li class="divider"><a href="http://bcm.edu/research/research-offices/office-of-clinical-research" class="btn btn-link">Clinical Research</a></li>
+                        <li class="divider"><a href="http://bcm.edu/research/research-offices/institute-for-clinical-translational-research" class="btn btn-link">Institute for Clinical &amp; Translational Research</a></li>
+                        <li class="divider"><a href="http://bcm.edu/research/research-offices/office-of-research-leadership" class="btn btn-link">Office of Research Leadership</a></li>
+                        <li class="divider"><a href="http://bcm.edu/research/research-offices/office-of-research-it" class="btn btn-link">Research IT</a></li>
+                        <li class="divider"><a href="http://bcm.edu/research/baylor-research/sponsored-programs" class="btn btn-link">Sponsored Programs</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-10 divider"><a href="#" class="btn btn-link">Additional Research Services</a></div>
+                    <div class="col-2"><button class="btn btn-link float-right" type="button" data-toggle="collapse" data-target="#researchMobileResearchServices" aria-expanded="false" aria-controls="researchMobileResearchServices"><i class="icon-expand"></i></button></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 px-0 collapse" id="researchMobileResearchServices" aria-labelledby="researchSecondaryMenu" data-parent="#researchMobileSecondary">
+                      <ul class="list-unstyled">
+                        <li class="divider"><a href="http://bcm.edu/research/services/service-labs" class="btn btn-link">Service Labs</a></li>
+                        <li class="divider"><a href="https://viictr.org/" class="btn btn-link">VIICTR</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              </div>
+            </div>
+            <!-- end RESEARCH -->
+            <!-- secondary accordion: COMMUNITY -->
+            <div class="row">
+              <div id="communityMobile" class="col-12 px-0">
+                <div class="row">
+                  <div class="col-10 divider">
+                    <a href="http://bcm.edu/community" class="btn btn-link">Community</a>
+                  </div>
+                  <div class="col-2">
+                      <button class="btn btn-link collapsed float-right" type="button" data-toggle="collapse" data-target="#communityMobileSecondary" aria-expanded="false" aria-controls="communityMobileSecondary"><i class="icon-expand"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div id="communityMobileSecondary" class="col-12 collapse px-0" aria-labelledby="communityMobile" data-parent="#mobileMenu">
+              <ul class="accordion list-unstyled" id="communitySecondaryMenu">
+                <li>
+                  <div class="row">
+                    <div class="col-10 divider"><a href="http://bcm.edu/community/healthcare-outreach" class="btn btn-link">Healthcare Outreach</a></div>
+                    <div class="col-2"><button class="btn btn-link float-right" type="button" data-toggle="collapse" data-target="#communityMobileHealthcareOutreach" aria-expanded="false" aria-controls="communityMobileHealthcareOutreach"><i class="icon-expand"></i></button></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 px-0 collapse" id="communityMobileHealthcareOutreach" aria-labelledby="communitySecondaryMenu" data-parent="#communityMobileSecondary">
+                      <ul class="list-unstyled">
+                        <li class="divider"><a href="http://bcm.edu/community/healthcare-outreach/our-community-health-programs" class="btn btn-link">Community Events</a></li>
+                        <li class="divider"><a href="http://bcm.edu/departments/department-of-medicine/sections-divisions-centers/general-internal-medicine/environmental-health-service/cores/clinical-service" class="btn btn-link">Environmental Health</a></li>
+                        <li class="divider"><a href="http://bcm.edu/community/healthcare-outreach/programs/homeless-healthcare-program" class="btn btn-link">Healthcare For Homeless</a></li>
+                        <li class="divider"><a href="http://bcm.edu/community/healthcare-outreach/programs/school-based-clinics-program" class="btn btn-link">School-Based Programs</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-10 divider"><a href="#" class="btn btn-link">General Resources</a></div>
+                    <div class="col-2"><button class="btn btn-link float-right" type="button" data-toggle="collapse" data-target="#communityMobileCareCenters" aria-expanded="false" aria-controls="communityMobileCareCenters"><i class="icon-expand"></i></button></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 px-0 collapse" id="communityMobileCareCenters" aria-labelledby="communitySecondaryMenu" data-parent="#communityMobileSecondary">
+                      <ul class="list-unstyled">
+                        <li class="divider"><a href="http://bcm.edu/community/events" class="btn btn-link">Community Events</a></li>
+                        <li class="divider"><a href="https://blogs.bcm.edu/" class="btn btn-link">Blogs</a></li>
+                        <li class="divider"><a href="http://bcm.edu/community/news" class="btn btn-link">News</a></li>
+                        <li class="divider"><a href="http://bcm.edu/community/baylor-in-the-community" class="btn btn-link">Baylor In The Community</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-10 divider"><a href="http://bcm.edu/community/global-outreach" class="btn btn-link">Global Outreach</a></div>
+                    <div class="col-2"><button class="btn btn-link float-right" type="button" data-toggle="collapse" data-target="#communityMobileGlobalOutreach" aria-expanded="false" aria-controls="communityMobileGlobalOutreach"><i class="icon-expand"></i></button></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 px-0 collapse" id="communityMobileGlobalOutreach" aria-labelledby="communitySecondaryMenu" data-parent="#communityMobileSecondary">
+                      <ul class="list-unstyled">
+                        <li class="divider"><a href="http://bcm.edu/community/global-outreach/global-health" class="btn btn-link">Global Health</a></li>
+                        <li class="divider"><a href="http://bcm.edu/community/global-outreach/global-health/research" class="btn btn-link">Current Projects</a></li>
+                        <li class="divider"><a href=" https://media.bcm.edu/documents/2019/3b/2019-annual-report-directs.pdf" class="btn btn-link">Annual Report</a></li>
+                        <li class="divider"><a href="http://bcm.edu/community/global-outreach" class="btn btn-link">More</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-10 divider"><a href="http://bcm.edu/community/education-outreach" class="btn btn-link">Educational Outreach</a></div>
+                    <div class="col-2"><button class="btn btn-link float-right" type="button" data-toggle="collapse" data-target="#communityMobileEducationalOutreach" aria-expanded="false" aria-controls="communityMobileEducationalOutreach"><i class="icon-expand"></i></button></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 px-0 collapse" id="communityMobileEducationalOutreach" aria-labelledby="communitySecondaryMenu" data-parent="#communityMobileSecondary">
+                      <ul class="list-unstyled">
+                        <li class="divider"><a href="http://bcm.edu/about-us/diversity-inclusion/programs/saturday-morning-science" class="btn btn-link">Saturday Morning Sciensits Program</a></li>
+                        <li class="divider"><a href="http://bcm.edu/education/graduate-school-of-biomedical-sciences/programs/diversity/smart-program" class="btn btn-link">SMART Program</a></li>
+                        <li class="divider"><a href="http://www.bioedonline.org/" class="btn btn-link">BioEd Online</a></li>
+                        <li class="divider"><a href="http://bcm.edu/community/educational-outreach" class="More"></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              </div>
+            </div>
+            <!-- end COMMUNITY -->
+            <!-- secondary accordion: ABOUT -->
+            <div class="row">
+              <div id="aboutMobile" class="col-12 px-0">
+                <div class="row">
+                  <div class="col-10 divider">
+                    <a href="http://bcm.edu/about-us" class="btn btn-link">About</a>
+                  </div>
+                  <div class="col-2">
+                      <button class="btn btn-link collapsed float-right" type="button" data-toggle="collapse" data-target="#aboutMobileSecondary" aria-expanded="false" aria-controls="aboutMobileSecondary"><i class="icon-expand"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div id="aboutMobileSecondary" class="col-12 collapse px-0" aria-labelledby="aboutMobile" data-parent="#mobileMenu">
+              <ul class="accordion list-unstyled" id="aboutSecondaryMenu">
+                <li>
+                  <div class="row">
+                    <div class="col-10 divider"><a href="http://bcm.edu/about-us" class="btn btn-link">About Us</a></div>
+                    <div class="col-2"><button class="btn btn-link float-right" type="button" data-toggle="collapse" data-target="#aboutMobileAbout" aria-expanded="false" aria-controls="aboutMobileAbout"><i class="icon-expand"></i></button></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 px-0 collapse" id="aboutMobileAbout" aria-labelledby="aboutSecondaryMenu" data-parent="#aboutMobileSecondary">
+                      <ul class="list-unstyled">
+                        <li class="divider"><a href="http://bcm.edu/academic-centers" class="btn btn-link">Academic Centers</a></li>
+                        <li class="divider"><a href="http://bcm.edu/about-us/alumni" class="btn btn-link">Alumni</a></li>
+                        <li class="divider"><a href="http://bcm.edu/careers" class="btn btn-link">Careers</a></li>
+                        <li class="divider"><a href="http://bcm.edu/about-us/bcm-ventures" class="btn btn-link">BCM Ventures</a></li>
+                        <li class="divider"><a href="http://bcm.edu/departments-centers" class="btn btn-link">Departments</a></li>
+                        <li class="divider"><a href="http://bcm.edu/giving" class="btn btn-link">Giving</a></li>
+                        <li class="divider"><a href="http://bcm.edu/about-us/leadership" class="btn btn-link">Leadership</a></li>
+                        <li class="divider"><a href="http://bcm.edu/about-us/mission-vision-values" class="btn btn-link">Mission, Vision, Values</a></li>
+                        <li class="divider"><a href="https://www.bcm.edu/news" class="btn btn-link">News</a></li>                       
+                        <li class="divider"><a href="http://bcm.edu/about-us/affiliates" class="btn btn-link">Our Affiliates</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-10 divider"><a href="http://bcm.edu/about-us/our-campus" class="btn btn-link">Offices</a></div>
+                    <div class="col-2"><button class="btn btn-link float-right" type="button" data-toggle="collapse" data-target="#aboutMobileOffices" aria-expanded="false" aria-controls="aboutMobileOffices"><i class="icon-expand"></i></button></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 px-0 collapse" id="aboutMobileOffices" aria-labelledby="aboutSecondaryMenu" data-parent="#aboutMobileSecondary">
+                      <ul class="list-unstyled">
+                        <li class="divider"><a href="http://bcm.edu/about-us/leadership/office-of-the-president" class="btn btn-link">President's Office</a></li>
+                        <li class="divider"><a href="http://bcm.edu/education/academic-faculty-affairs/provost" class="btn btn-link">Office of the Provost</a></li>
+                        <li class="divider"><a href="http://bcm.edu/research/research-offices" class="btn btn-link">Office of Research</a></li>
+                        <li class="divider"><a href="http://bcm.edu/about-us/our-campus/ombuds-office" class="btn btn-link">Ombuds Office</a></li>
+                        <li class="divider"><a href="http://bcm.edu/about-us/our-campus" class="btn btn-link">View All</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-10 divider"><a href="http://bcm.edu/about-us/our-campus" class="btn btn-link">Our Campus</a></div>
+                    <div class="col-2"><button class="btn btn-link float-right" type="button" data-toggle="collapse" data-target="#aboutMobileOurCampus" aria-expanded="false" aria-controls="aboutMobileOurCampus"><i class="icon-expand"></i></button></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 px-0 collapse" id="aboutMobileOurCampus" aria-labelledby="aboutSecondaryMenu" data-parent="#aboutMobileSecondary">
+                      <ul class="list-unstyled">
+                        <li class="divider"><a href="http://bcm.edu/about-us/our-campus/compliance" class="btn btn-link">Compliance</a></li>
+                        <li class="divider"><a href="http://bcm.edu/about-us/our-campus/weather-safety" class="btn btn-link">Weather Safety</a></li>
+                        <li class="divider"><a href="http://bcm.edu/about-us/our-campus/resource-stewardship-sustainability" class="btn btn-link">Resource Stewardship &amp; Sudstainability</a></li>
+                        <li class="divider"><a href="https://bcmteamshop.corpmerchandise.com/" class="btn btn-link">Team Shop</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              </div>
+            </div>
+            <!-- end ABOUT -->
+            <div class="row pt-5 pb-2 icon-row">
+              <div class="col d-flex align-items-center">
+                <a href="http://bcm.edu/giving" class="btn link_attention">Giving</a>
+                <a href="http://facebook.com/BaylorCollegeOfMedicine" class="link-social-mobile" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="http://twitter.com/bcmhouston" class="link-social-mobile" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="http://youtube.com/user/BCMweb" class="link-social-mobile" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="http://www.linkedin.com/company/baylor-college-of-medicine" class="link-social-mobile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="http://bcm.edu/search" class="rounded-circle link_search"><i class="fas fa-search"></i></a>
+              </div>
+            </div>
+            <div class="row py-3 link-row">
+              <div class="col">
+                <a href="http://bcm.edu/careers" class="d-block p-2">Careers</a>
+                <a href="http://bcm.edu/contact-us" class="d-block p-2">Contact Us</a>
+                <a href="https://www.bcm.edu/news" class="d-block p-2">News</a>               
+              </div>
+            </div>
+          </div>          
+          <ul class="navbar-nav d-none d-md-flex" role="navigation">
+            <li class="nav-item dropdown">
+              <a href="http://bcm.edu/healthcare" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">Healthcare</a>
+              <div class="dropdown-menu dropdown-menu_healthcare">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <ul>
+                        <li class="category-heading"><a href="http://bcm.edu/healthcare/specialties"><strong>Specialties</strong></a></li>
+                        <li><a href="http://bcm.edu/healthcare/specialties/cardiovascular-medicine">Cardiovascular Care</a></li>
+                        <li><a href="http://bcm.edu/healthcare/specialties/oncology">Oncology</a></li>
+                        <li><a href="http://bcm.edu/healthcare/specialties/neurosurgery">Neurosurgery</a></li>
+                        <li><a href="http://bcm.edu/healthcare/specialties/family-medicine/preventive-and-acute-care">Primary Care</a></li>
+                        <li><a href="http://bcm.edu/healthcare/specialties" class="cta-btn">View All Specialties</a></li>
+                      </ul>
+                      <ul>
+                        <li class="category-heading"><a href="http://bcm.edu/healthcare/for-physicians">For Health Professionals</a></li>
+                        <li><a href="http://bcm.edu/healthcare/find-a-doctor">Refer a Patient</a></li>
+                        <li><a href="http://bcm.edu/healthcare/clinical-trials">Clinical Trials</a></li>
+                        <li><a href="http://bcm.edu/education/school-of-medicine/continuing-professional-development">Professional Development</a></li>
+                        <li><a href="http://bcm.edu/healthcare/for-physicians" class="cta-btn">View All</a></li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <ul>
+                        <li class="category-heading"><a href="http://bcm.edu/healthcare/for-patients">For Patients &amp; Visitors</a></li>
+                        <li><a href="http://bcm.edu/healthcare/for-patients/mychart-and-your-health">MyChart</a></li>
+                        <li><a href="http://bcm.edu/healthcare/for-patients/insurance">Accepted Insurance</a></li>
+                        <li><a href="http://bcm.edu/healthcare/for-patients/billing-office">Pay My Bill</a></li>
+                        <li><a href="http://bcm.edu/healthcare/for-patients/patient-guide">Patient Information</a></li>
+                        <li><a href="http://bcm.edu/healthcare/for-patients" class="cta-btn">View All</a></li>
+                      </ul>
+                      <ul>
+                        <li class="category-heading"><a href="http://bcm.edu/healthcare/clinical-trials">Clinical Trials</a></li>
+                        <li><a href="http://bcm.edu/healthcare/clinical-trials?field_clinical_trial_tags_target_id_verf%5B0%5D=69">Autism</a></li>
+                        <li><a href="http://bcm.edu/healthcare/clinical-trials?field_clinical_trial_tags_target_id_verf%5B0%5D=10">Cancer</a></li>
+                        <li><a href="http://bcm.edu/healthcare/clinical-trials?field_clinical_trial_tags_target_id_verf%5B0%5D=42">Obesity</a></li>
+                        <li><a href="http://bcm.edu/healthcare/clinical-trials?field_clinical_trial_tags_target_id_verf%5B0%5D=45">Substance Abuse</a></li>
+                        <li><a href="http://bcm.edu/healthcare/clinical-trials" class="cta-btn">View All Clinical Trials</a></li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <div class="card-body card-color-bottom">
+                          <p class="card-title h5">Make an Appointment</p>
+                          <p class="card-text">Call today to schedule an appointment or fill out an online request form. If requested before 2 p.m. you will receive a response today.</p>                          
+                        </div>
+                        <div class="card-body card-color-bottom">
+                          <p>
+                            <span class="text-uppercase">Call</span>
+                            <span class="h3 d-block">713-798-1000</span>
+                            <span>Monday - Friday 8 a.m. - 5 p.m.</span>
+                          </p>
+                          <p class="card-text text-uppercase">Online</p>
+                          <a href="http://bcm.edu/healthcare/request-appointment-online" class="btn link_attention">Request now</a>
+                          <p class="card-text">Request non-urgent appointments</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="http://bcm.edu/education" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">Education</a>
+              <div class="dropdown-menu dropdown-menu_education">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <ul>
+                        <li class="category-heading"><a href="http://bcm.edu/education/programs-admissions">Degree Programs &amp; Admissions</a></li>
+                        <li><a href="http://bcm.edu/education/school-of-medicine/m-d-program">M.D. Program</a></li>
+                        <li><a href="http://bcm.edu/education/graduate-school-of-biomedical-sciences/programs">Ph.D. Programs</a></li>
+                        <li><a href="http://bcm.edu/education/school-of-health-professions/dnp-program-nurse-anesthesia">Doctor of Nurse Practice (Anesthesia)</a></li>
+                        <li><a href="http://bcm.edu/education/school-of-health-professions/genetic-counseling-program">Genetic Counseling Program</a></li>
+                        <li><a href="http://bcm.edu/education/school-of-health-professions/physician-assistant-program">P. A. Program</a></li>
+                        <li><a href="http://bcm.edu/education/school-of-health-professions/orthotics-and-prosthetics-program">Orthotics &amp; Prosthetics Program</a></li>
+                        <li><a href="http://bcm.edu/education/school-of-medicine/baccalaureate-m-d-programs">Baccalaurate/M.D. Programs</a></li>
+                        <li><a href="http://bcm.edu/education/school-of-medicine/m-d-program/dual-degrees">Dual Degree Programs</a></li>
+                        <li><a href="http://bcm.edu/education/programs-admissions" class="cta-btn">View All Programs</a></li>
+                      </ul>
+                      <ul>
+                        <li class="category-heading">Financing Your Education</li>
+                        <li><a href="http://bcm.edu/education/tuition-fees">Tuition &amp; Fees</a></li>
+                        <li><a href="http://bcm.edu/education/financial-aid">Financial Aid</a></li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <ul>
+                        <li class="category-heading"><a href="http://bcm.edu/education/schools">Schools</a></li>
+                        <li><a href="http://bcm.edu/education/school-of-medicine">School of Medicine</a></li>
+                        <li><a href="http://bcm.edu/education/graduate-school-of-biomedical-sciences">Graduate School of Biomedical Sciences</a></li>
+                        <li><a href="http://bcm.edu/education/national-school-of-tropical-medicine">National School of Tropical Medicine</a></li>
+                        <li><a href="http://bcm.edu/education/school-of-health-professions">School of Health Professions</a></li>
+                      </ul>
+                      <ul>
+                        <li class="category-heading"><a href="http://bcm.edu/education/programs-admissions">Advanced Training Programs</a></li>
+                        <li><a href="http://bcm.edu/education/programs-admissions?field_program_types_value%5B0%5D=Residency">Residency Programs</a></li>
+                        <li><a href="http://bcm.edu/education/programs-admissions?field_program_types_value%5B0%5D=Clinical%20Fellowship">Clinical Fellowships</a></li>
+                        <li><a href="https://jobs.bcm.edu/go/Postdoctoral-Research/7891800/">Postdoctoral Research Positions</a></li>
+                        <li><a href="http://bcm.edu/education/school-of-medicine/continuing-professional-development">Continuing Professional Development</a></li>
+                        <li><a href="http://bcm.edu/education/national-school-of-tropical-medicine/education/diploma-in-tropical-medicine">Diploma in Tropical Medicine</a></li>
+                        <li><a href="http://bcm.edu/education/programs-admissions" class="cta-btn">View All</a></li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <ul>
+                        <li class="category-heading"><a href="http://bcm.edu/education/academic-faculty-affairs/academic-resources">Resources</a></li>
+                        <li><a href="http://bcm.edu/departments">Departments</a></li>
+                        <li><a href="http://bcm.edu/academic-centers">Academic Centers</a></li>
+                        <li><a href="http://bcm.edu/about-us/diversity-inclusion">Diversity, Inclusion, &amp; Equity</a></li>
+                        <li><a href="http://bcm.edu/education/registrar/academic-calendars">Academic Calendars</a></li>
+                        <li><a href="http://bcm.edu/education/academic-faculty-affairs/academic-resources" class="cta-btn">View All</a></li>
+                      </ul>
+                      <ul>
+                        <li class="category-heading">Information For...</li>
+                        <li><a href="http://bcm.edu/education/for-students">Students</a></li>
+                        <li><a href="http://bcm.edu/education/school-of-medicine/graduate-medical-education">Residents &amp; Fellows</a></li>
+                        <li><a href="http://bcm.edu/education/graduate-school-of-biomedical-sciences/postdoctoral-affairs">Postdoctoral Researchers</a></li>
+                        <li><a href="http://bcm.edu/education/for-faculty">Faculty</a></li>
+                        <li><a href="http://bcm.edu/about-us/alumni">Alumni</a></li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="/static/assets/sam-houston-park-downtown.jpg" alt="Sam Houston Park, downtown Houston, Tx." class="card-img-top">
+                        <div class="card-body">
+                          <p class="h6 text-bcm">America's fourth largest city is a great place to live, work and play. Find out why.</p>
+                          <a href="http://bcm.edu/community/life-in-houston" class="btn btn-bcm card-btn">Get to know Houston</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="http://bcm.edu/research" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">Research</a>
+              <div class="dropdown-menu dropdown-menu_research">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <ul>
+                        <li class="category-heading"><a href="http://bcm.edu/research">Research at Baylor</a></li>
+                        <li><a href="http://bcm.edu/academic-centers">Academic Centers</a></li>
+                        <li><a href="http://bcm.edu/departments">Departments</a></li>
+                        <li><a href="http://bcm.edu/research/clinical-trials">Clinical Trials</a></li>
+                        <li><a href="http://bcm.edu/research/labs-and-centers/faculty-labs">Faculty Labs</a></li>
+                        <li><a href="https://blogs.bcm.edu/topics/from-the-labs/">From the Labs</a></li>
+                        <li><a href="http://bcm.edu/research/news">News</a></li>
+                        <li><a href="http://bcm.edu/research/baylor-research">Our Research</a></li>
+                        <li><a href="http://bcm.edu/research/labs-centers/centers">Research Centers</a></li>
+                        <li><a href="http://bcm.edu/research/baylor-research/strategic-research-centers">Strategic Research Centers</a></li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <ul>
+                        <li class="category-heading"><a href="http://bcm.edu/research/research-offices">Research Offices</a></li>
+                        <li><a href="http://bcm.edu/research/services/atc-labs">Ádvanced Technology Cores</a></li>
+                        <li><a href="http://bcm.edu/?tmp=/research/oor/ccm/home">Center of Comparative Medicine</a></li>
+                        <li><a href="http://bcm.edu/research/research-offices/office-of-clinical-research">Clinical Research</a></li>
+                        <li><a href="http://bcm.edu/research/research-offices/institute-for-clinical-translational-research">Institute for Clinical &amp; Traditional Research</a></li>
+                        <li><a href="http://bcm.edu/research/research-offices/office-of-research-leadership">Office of Research Leadership</a></li>
+                        <li><a href="http://bcm.edu/research/research-offices/office-of-research-it">Research IT</a></li>
+                        <li><a href="http://bcm.edu/research/baylor-research/sponsored-programs">Sponsored Programs</a></li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <ul>
+                        <li class="category-heading">Additional Research Services</li>
+                        <li><a href="http://bcm.edu/research/services/service-labs">Service Labs</a></li>
+                        <li><a href="https://viictr.org/">VIICTR</a></li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="/static/assets/sam-houston-park-downtown.jpg" alt="Sam Houston Park, downtown Houston, Tx." class="card-img-top">
+                        <div class="card-body">
+                          <p class="h6 text-bcm">America's fourth largest city is a great place to live, work and play. Find out why.</p>
+                          <a href="http://bcm.edu/community/life-in-houston" class="btn btn-bcm card-btn">Get to know Houston</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="http://bcm.edu/community" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">Community</a>
+              <div class="dropdown-menu dropdown-menu_community">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <ul>
+                        <li class="category-heading"><a href="http://bcm.edu/community/healthcare-outreach">Healthcare Outreach</a></li>
+                        <li><a href="http://bcm.edu/community/healthcare-outreach/our-community-health-programs">Community Programs</a></li>
+                        <li><a href="http://bcm.edu/departments/department-of-medicine/sections-divisions-centers/general-internal-medicine/environmental-health-service/cores/clinical-service">Environmental Health</a></li>
+                        <li><a href="http://bcm.edu/community/healthcare-outreach/programs/homeless-healthcare-program">Healthcare for Homeless</a></li>
+                        <li><a href="http://bcm.edu/community/healthcare-outreach/programs/school-based-clinics-program">School-Based Programs</a></li>
+                        <li><a href="http://bcm.edu/community/healthcare-outreach" class="cta-btn">More</a></li>
+                      </ul>
+                      <ul>
+                        <li class="category-heading">General Resources</li>
+                        <li><a href="http://bcm.edu/community/events">Community Events</a></li>
+                        <li><a href="http://bcm.edu/community/news">News</a></li>
+                        <li><a href="https://blogs.bcm.edu/">Blogs</a></li>
+                        <li><a href="http://bcm.edu/community/baylor-in-the-community">Baylor in the Community</a></li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <ul>
+                        <li class="category-heading"><a href="http://bcm.edu/community/global-outreach">Global Outreach</a></li>
+                        <li><a href="http://bcm.edu/community/global-outreach/global-health">Global Health</a></li>
+                        <li><a href="http://bcm.edu/community/global-outreach/global-health/research">Current Projects</a></li>
+                        <li><a href="http://bcm.edu/sites/default/files/2018/54/the-annual-report-for-global-health.pdf">Annual Report</a></li>
+                        <li><a href="http://bcm.edu/community/global-outreach" class="cta-btn">More</a></li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <ul>
+                        <li class="category-heading"><a href="http://bcm.edu/community/education-outreach">Educational Outreach</a></li>
+                        <li><a href="http://bcm.edu/about-us/diversity-inclusion/programs/saturday-morning-science">Saturday Morning Scientist Program</a></li>
+                        <li><a href="http://bcm.edu/education/graduate-school-of-biomedical-sciences/programs/diversity/smart-program">SMART Program</a></li>
+                        <li><a href="http://www.bioedonline.org/">BioEd Online</a></li>
+                        <li><a href="http://bcm.edu/community/educational-outreach" class="cta-btn">More</a></li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="/static/assets/sam-houston-park-downtown.jpg" alt="Sam Houston Park, downtown Houston, Tx." class="card-img-top">
+                        <div class="card-body">
+                          <p class="h6 text-bcm">America's fourth largest city is a great place to live, work and play. Find out why.</p>
+                          <a href="http://bcm.edu/community/life-in-houston" class="btn btn-bcm card-btn">Get to know Houston</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="http://bcm.edu/healthcare" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">About</a>
+              <div class="dropdown-menu dropdown-menu_about">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <ul>
+                        <li class="category-heading"><a href="http://bcm.edu/about-us">About Us</a></li>
+                        <li><a href="http://bcm.edu/academic-centers">Academic Centers</a></li>
+                        <li><a href="http://bcm.edu/about-us/alumni">Alumni</a></li>
+                        <li><a href="http://www.baylormedicalfoundation.org/">Baylor Medical Foundation</a></li>
+                        <li><a href="http://bcm.edu/careers">Careers</a></li>
+                        <li><a href="http://bcm.edu/about-us/bcm-ventures">BCM Ventures</a></li>
+                        <li><a href="http://bcm.edu/departments-centers">Departments</a></li>
+                        <li><a href="http://bcm.edu/giving">Giving</a></li>
+                        <li><a href="http://bcm.edu/about-us/leadership">Leadership</a></li>
+                        <li><a href="http://bcm.edu/about-us/mission-vision-values">Mission, Vision, Values</a></li>
+                        <li><a href="http://http://bcm.edu/news">News</a></li>
+                        <li><a href="http://bcm.edu/about-us/affiliates">Our Affiliates</a></li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <ul>
+                        <li class="category-heading"><a href="http://bcm.edu/about-us/leadership">Offices</a></li>
+                        <li><a href="http://bcm.edu/about-us/leadership/office-of-the-president">President's Office</a></li>
+                        <li><a href="http://bcm.edu/education/academic-faculty-affairs/provost">Office of the Provost</a></li>
+                        <li><a href="http://bcm.edu/research/research-offices">Office of Research</a></li>
+                        <li><a href="http://bcm.edu/about-us/our-campus/ombuds-office">Ombuds Office</a></li>
+                        <li><a href="http://bcm.edu/about-us/our-campus/administrative-offices" class="cta-link">View All ></a></li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <ul>
+                        <li class="category-heading"><a href="http://bcm.edu/about-us/our-campus">Our Campus</a></li>
+                        <li><a href="http://bcm.edu/about-us/our-campus/compliance">Compliance</a></li>
+                        <li><a href="http://bcm.edu/about-us/our-campus/weather-safety">Weather Safety</a></li>
+                        <li><a href="http://bcm.edu/about-us/our-campus/resource-stewardship-sustainability">Resource Stewardship &amp; Sustainability</a></li>
+                        <li><a href="https://bcmteamshop.corpmerchandise.com/">Team Shop</a></li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="/static/assets/sam-houston-park-downtown.jpg" alt="Sam Houston Park, downtown Houston, Tx." class="card-img-top">
+                        <div class="card-body">
+                          <p class="h6 text-bcm">America's fourth largest city is a great place to live, work and play. Find out why.</p>
+                          <a href="http://bcm.edu/community/life-in-houston" class="btn btn-bcm card-btn">Get to know Houston</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item push d-md-none d-lg-inline-block"><a class="nav-link btn link_attention" href="http://bcm.edu/giving">Giving</a></li>
+            <li class="nav-item d-md-none d-lg-inline-block"><a class="nav-link link_careers" href="http://bcm.edu/careers">Careers</a></li>
+            <li class="nav-item d-md-none d-lg-inline-block"><a class="nav-link link_social" href="http://facebook.com/BaylorCollegeOfMedicine" target="_blank"><i aria-hidden="true" class="fab fa-facebook-square"></i><span class="sr-only">facebook</span></a></li>
+            <li class="nav-item d-md-none d-lg-inline-block"><a class="nav-link link_social" href="http://twitter.com/bcmhouston" target="_blank"><i aria-hidden="true" class="fab fa-twitter"></i><span class="sr-only">twitter</span></a></li>
+            <li class="nav-item d-md-none d-lg-inline-block"><a class="nav-link link_social" href="http://youtube.com/user/BCMweb" target="_blank"><i aria-hidden="true" class="fab fa-youtube"></i></a><span class="sr-only">youTube</span></li>
+            <li class="nav-item d-md-none d-lg-inline-block"><a class="nav-link link_social" href="http://www.linkedin.com/company/baylor-college-of-medicine" target="_blank"><i aria-hidden="true" class="fab fa-linkedin"></i><span class="sr-only">linkedIn</span></a></li>
+            <li class="nav-item d-md-none d-lg-inline-block"><a href="http://bcm.edu/search" class="nav-link rounded-circle link_search"><i aria-hidden="true" class="fas fa-search"></i><span class="sr-only">search</span></a></li>
+          </ul>       
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="container container__lock-up">
+    <div class="row">
+      <div class="col">
+        <a href="http://www.bcm.edu" class="logo">
+          <img src="/static/assets/bcm-logo.svg" class="img-fluid" alt="Baylor College of Medicine">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid container__sub-nav" role="navigation">
+    <div class="menu-control">
+      <a data-toggle="collapse" href="#secondaryNav" role="button" aria-expanded="false" aria-controls="secondaryNav">Section Navigation <span class="dropdown-caret float-right"></span></a>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="collapse" id="secondaryNav">
+            <ul class="nav">
+              <li class="nav-item"><a href="#" class="nav-link">You</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">can have</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">up to</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">seven</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">items in</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">your</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">sub-navigation</a></li>
+            </ul>           
+          </div>
+        </div>
+      </div>      
+    </div>
+  </div>
+  <!-- END HEADER -->
